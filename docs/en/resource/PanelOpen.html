@@ -1,0 +1,433 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Open Panel · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PanelRightMenu.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Overview.html">
+            
+                <a href="Overview.html">
+            
+                    
+                    Feature Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    Preparation for integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    Integrate PanelSDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    PanelSDK Features
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="PanelOpen.html">
+            
+                <a href="PanelOpen.html">
+            
+                    
+                    Open Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="PanelRightMenu.html">
+            
+                <a href="PanelRightMenu.html">
+            
+                    
+                    Click Panel Toolbar Right Menu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="PanelRouterUrl.html">
+            
+                <a href="PanelRouterUrl.html">
+            
+                    
+                    Get Panel Router Url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="PanelDestroy.html">
+            
+                <a href="PanelDestroy.html">
+            
+                    
+                    Release panel resource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="PanelClear.html">
+            
+                <a href="PanelClear.html">
+            
+                    
+                    Clear Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    Error Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Open Panel</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="open-panel"><a name="open-panel" class="plugin-anchor" href="#open-panel"><i class="fa fa-link" aria-hidden="true"></i></a>Open Panel</h1>
+<p>Enter the panel page through the homeId and deviceId.The homeId and deviceId need to be obtained through the public Tuya Smart SDK interface.</p>
+<p><strong>Interface Description</strong></p>
+<p>Open Panel</p>
+<pre class="language-"><code class="lang-java"><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">,</span> <span class="token keyword">long</span> homeId<span class="token punctuation">,</span> <span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token class-name">ITuyaPanelLoadCallback</span> loadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Parameter Description</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activity</td>
+<td>Open the panel context must to be used TuyaPanelSDK.getCurrentActivity()</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>The homeId need to be obtained through the public Tuya Smart Android SDK interface</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>The deviceId need to be obtained through the public Tuya Smart Android SDK interface.</td>
+</tr>
+<tr>
+<td>loadCallback</td>
+<td>Status Callback when the panel loads</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sampel Code</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">final</span> <span class="token class-name">ITuyaPanelLoadCallback</span> mLoadCallback <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaPanelLoadCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStart</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;Loading...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token function">getApplicationContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;errorCode:&quot;</span> <span class="token operator">+</span> code <span class="token operator">+</span> <span class="token string">&quot;,errorString:&quot;</span> <span class="token operator">+</span> error<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_LONG<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onProgress</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> progress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mCurrentHomeId<span class="token punctuation">,</span> bean<span class="token punctuation">.</span><span class="token function">getDevId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mLoadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="PanelRightMenu.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Click Panel Toolbar Right Menu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Open Panel","level":"1.5.1","depth":2,"next":{"title":"Click Panel Toolbar Right Menu","level":"1.5.2","depth":2,"path":"resource/PanelRightMenu.md","ref":"./resource/PanelRightMenu.md","articles":[]},"previous":{"title":"PanelSDK Features","level":"1.5","depth":1,"ref":"","articles":[{"title":"Open Panel","level":"1.5.1","depth":2,"path":"resource/PanelOpen.md","ref":"./resource/PanelOpen.md","articles":[]},{"title":"Click Panel Toolbar Right Menu","level":"1.5.2","depth":2,"path":"resource/PanelRightMenu.md","ref":"./resource/PanelRightMenu.md","articles":[]},{"title":"Get Panel Router Url","level":"1.5.3","depth":2,"path":"resource/PanelRouterUrl.md","ref":"./resource/PanelRouterUrl.md","articles":[]},{"title":"Release panel resource","level":"1.5.4","depth":2,"path":"resource/PanelDestroy.md","ref":"./resource/PanelDestroy.md","articles":[]},{"title":"Clear Cache","level":"1.5.5","depth":2,"path":"resource/PanelClear.md","ref":"./resource/PanelClear.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/PanelOpen.md","mtime":"2020-03-02T02:38:13.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-02T02:15:08.254Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
