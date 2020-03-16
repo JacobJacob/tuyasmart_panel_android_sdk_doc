@@ -2,6 +2,4 @@
 
 ---
 
-* [English](en/)
-
-* [简体中文](zh-hans/)
+* [Docs](https://tuyainc.github.io/tuyasmart_panel_android_sdk_doc/)
