@@ -8,6 +8,6 @@
     * [Open Panel](./resource/PanelOpen.md)
     * [Click Panel Toolbar Right Menu](./resource/PanelRightMenu.md)
     * [Get Panel Router Url](./resource/PanelRouterUrl.md)
-    * [Release panel resource](./resource/PanelDestroy.md)
+    * [Release Panel Resource](./resource/PanelDestroy.md)
     * [Clear Cache](./resource/PanelClear.md)
 * [Error Code](./resource/ErrorCode.md)

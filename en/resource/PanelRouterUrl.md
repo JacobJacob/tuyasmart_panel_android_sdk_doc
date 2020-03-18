@@ -1,6 +1,6 @@
 # Get the Panel Router Url
 
-Click some view to get the router url in the current panel to jump to other page
+Click some view to get the router url in the current panel to jump to other pages
 
 **Interface Description**
 

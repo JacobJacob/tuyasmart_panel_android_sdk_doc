@@ -4,8 +4,8 @@ Tuya Smart Android PanelSDK provides the interface package for the communication
 
 Supported hardware device type: WIFI 
 
-Unsupported hardware device type: Zigbee、Mesh、BLE
+Unsupported hardware device types: Zigbee、Mesh、BLE
 
 Supported Features：Device panel control and alarm
 
-Unsupported Features：Groups Panel Control
+Unsupported Feature：Groups panel control

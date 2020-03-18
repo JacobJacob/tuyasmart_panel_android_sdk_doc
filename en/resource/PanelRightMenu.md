@@ -4,7 +4,7 @@ Open other pages through the callback on the toolbar right menu of the panel
 
 **Interface Descprition**
 
-Click the toolbar right menu get the current panel device Id
+Click the toolbar right menu get the current panel deviceId
 
 ``` java
 void setPressedRightMenuListener(ITuyaPressedRightMenuListener listener);

@@ -1,7 +1,7 @@
 # Integrated PanleSDK
 1. Create Project
 
-   Build your project in the Android Studio and already integrate Tuyasmart HomeSDK
+   Build your project in the Android Studio and integrate Tuyasmart HomeSDK
 
 2. Configure the root build.gradle
 
