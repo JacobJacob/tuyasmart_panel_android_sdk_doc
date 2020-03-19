@@ -2,14 +2,14 @@
 
 Enter the panel page through the homeId and deviceId.The homeId and deviceId need to be obtained through the public Tuya Smart SDK interface.
 
-**Interface Description**
+**Declaration**
 
 Open Panel
 
 ``` java
 gotoPanelViewControllerWithDevice(Activity activity, long homeId, String deviceId, ITuyaPanelLoadCallback loadCallback);
 ```
-**Parameter Description**
+**Parameter**
 
 | Parameter         | Description                                                         |
 | ------------ | ------------------------------------------------------------ |
@@ -18,7 +18,7 @@ gotoPanelViewControllerWithDevice(Activity activity, long homeId, String deviceI
 | deviceId        | The deviceId need to be obtained through the public Tuya Smart Android SDK interface.                                |
 | loadCallback | Status Callback when the panel loads                                                |
 
-**Sampel Code**
+**Example**
 ``` java
 final ITuyaPanelLoadCallback mLoadCallback = new ITuyaPanelLoadCallback() {
     @Override

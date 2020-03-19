@@ -2,19 +2,19 @@
 
 Open other pages through the callback on the toolbar right menu of the panel
 
-**Interface Descprition**
+**Declaration**
 
 Click the toolbar right menu get the current panel deviceId
 
 ``` java
 void setPressedRightMenuListener(ITuyaPressedRightMenuListener listener);
 ```
-**Parameter Description**
+**Parameter**
 
 | Parameter                          | Description                            |
 | ----------------------------- | ------------------------------- |
 | ITuyaPressedRightMenuListener | the deviceId  |
-**Sample Code**
+**Example**
 ``` java
 TuyaPanelSDK.getPanelInstance().setPressedRightMenuListener(new ITuyaPressedRightMenuListener() {
     @Override

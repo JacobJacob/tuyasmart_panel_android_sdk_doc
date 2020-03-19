@@ -2,7 +2,7 @@
 
 Call this method to release resources when exiting the application
 
-**Sample code**
+**Example**
 
 ``` java
 TuyaPanel.getInstance().onDestroy();

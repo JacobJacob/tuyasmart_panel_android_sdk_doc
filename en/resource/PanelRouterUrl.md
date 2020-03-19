@@ -2,20 +2,20 @@
 
 Click some view to get the router url in the current panel to jump to other pages
 
-**Interface Description**
+**Declaration**
 
 Click some view to get the router url
 
 ``` java
 void setOpenUrlListener(ITuyaOpenUrlListener listener);
 ```
-**Parameter Descrpition**
+**Parameter**
 
 | Parameter                 | Description                     |
 | -------------------- | ------------------------ |
 | ITuyaOpenUrlListener | The router url |
 
-**Sample Code**
+**Example**
 ``` java
 TuyaPanelSDK.getPanelInstance().setOpenUrlListener(new ITuyaOpenUrlListener() {
     @Override
