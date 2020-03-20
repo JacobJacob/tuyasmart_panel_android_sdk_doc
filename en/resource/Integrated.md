@@ -1,4 +1,4 @@
-# Integrated PanleSDK
+# Integrated Device Control Biz Bundle
 1. Create Project
 
    Build your project in the Android Studio and integrate Tuyasmart HomeSDK
@@ -161,7 +161,7 @@
   -dontwarn com.tuya.**.**
   ```
 
-5. Init Tuya Smart Android PanelSDK in the Application
+5. Init Tuya Smart Android Device Control Biz Bundle in the Application
 
     ``` java
     public class TuyaSmartApp extends Application {

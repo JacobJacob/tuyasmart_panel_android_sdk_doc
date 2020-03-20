@@ -1,4 +1,4 @@
-# TuyaSmart Android PanelSDK Documentation
+# TuyaSmart Android Device Control Biz Bundle Documentation
 
 ---
 

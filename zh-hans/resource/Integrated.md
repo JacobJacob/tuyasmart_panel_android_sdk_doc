@@ -1,4 +1,4 @@
-# 集成 PanleSDK
+# 集成 设备控制业务包
 1. 创建工程
 
    在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
@@ -162,7 +162,7 @@
   -dontwarn com.tuya.**.**
   ```
 
-5. Application 中初始化涂鸦智能 PanelSDK
+5. Application 中初始化涂鸦智能 设备控制业务包
 
     ``` java
     public class TuyaSmartApp extends Application {

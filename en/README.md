@@ -1,8 +1,8 @@
-# Tuya Smart Android PanelSDK
+# Tuya Smart Android Device Control Biz Bundle
 
 ## Features Overview
 
-Tuya Smart Android PanelSDK provides the interface package for the communication between panel and Tuya Cloud to accelerate the application development process
+Tuya Smart Android Device Control Biz Bundle provides the interface package for the communication between panel and Tuya Cloud to accelerate the application development process
 
 Supported hardware device type: WIFI 
 
