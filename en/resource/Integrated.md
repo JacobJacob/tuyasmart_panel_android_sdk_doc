@@ -170,6 +170,7 @@
         public void onCreate() {
             super.onCreate();
             TuyaWrapper.init(this);
+            // you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()
             TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
         }
     }

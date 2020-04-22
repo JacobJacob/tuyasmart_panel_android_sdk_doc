@@ -171,6 +171,7 @@
         public void onCreate() {
             super.onCreate();
             TuyaWrapper.init(this);
+            // 必须移除 TuyaHomeSdk.init() 方法，再使用 TuyaPanelSDK.init()
             TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
         }
     }
