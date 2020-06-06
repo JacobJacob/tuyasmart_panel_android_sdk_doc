@@ -1,9 +1,9 @@
 # 集成 设备控制业务包
-1. 创建工程
+## 创建工程
 
    在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
 
-2. 根目录的 build.gradle 配置
+## 根目录的 build.gradle 配置
 
   ``` groovy
   allprojects {
@@ -14,7 +14,7 @@
   }
   ```
 
-3. module 的 build.gradle 配置
+## module 的 build.gradle 配置
 
   ``` groovy
   android {
@@ -68,9 +68,9 @@
   	}
   ```
 
-    **可选配置 根据面板功能依赖**
+  ###  可选配置 根据面板功能依赖
 
-    * 高德地图依赖项 发布GooglePlay时请务必去除此依赖
+  #### 高德地图依赖项 发布GooglePlay时请务必去除此依赖
 
     ``` groovy
     implementation 'com.amap.api:search:6.9.2'
@@ -78,14 +78,14 @@
     implementation 'com.tuya.smart:tuyasmart-react-native-amap:1.0.0'
     ```
 
-    * GoogleMap 依赖项 发布国内应用市场时请务必去除此依赖
+  #### GoogleMap 依赖项 发布国内应用市场时请务必去除此依赖
 
     ``` groovy
     implementation 'com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0'
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     ```
 
-    * QQ 音乐登录模块依赖项
+  #### QQ 音乐登录模块依赖项
 
     ``` groovy
     implementation(name: 'qqmusic-innovation-aidl-api-sdk-1.0.0-SNAPSHOT-release', ext: 'aar')
@@ -95,7 +95,7 @@
     implementation "com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer"
     ```
 
-    * 扫地机依赖项
+  #### 扫地机依赖项
 
     ``` groovy
     implementation 'com.tuya.smart:tuyasmart-react-native-fetch-blob:3.12.0r123h1'
@@ -108,7 +108,7 @@
     implementation 'com.tuya.smart:tuyasmart-react-sweeper-common:1.0.0-rc.5'
     ```
 
-4. 混淆配置
+## 混淆配置
 
   ``` 
   # react-native
@@ -162,7 +162,7 @@
   -dontwarn com.tuya.**.**
   ```
 
-5. Application 中初始化涂鸦智能 设备控制业务包
+## Application 中初始化涂鸦智能 设备控制业务包
 
     ``` java
     public class TuyaSmartApp extends Application {
