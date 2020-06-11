@@ -44,7 +44,10 @@ final ITuyaPanelLoadCallback mLoadCallback = new ITuyaPanelLoadCallback() {
     
 TuyaPanelSDK.getPanelInstance().gotoPanelViewControllerWithDevice(TuyaPanelSDK.getCurrentActivity(), mCurrentHomeId, bean.getDevId(), mLoadCallback);
 ```
-## Click panle toolbar right menu
+
+## Panel Delegate
+
+### Click panle toolbar right menu
 
 Open other pages through the callback on the toolbar right menu of the panel
 
@@ -70,7 +73,7 @@ TuyaPanelSDK.getPanelInstance().setPressedRightMenuListener(new ITuyaPressedRigh
 });
 ```
 
-## Get panle router url
+### Get panle router url
 
 Click some view to get the router url in the current panel to jump to other pages
 

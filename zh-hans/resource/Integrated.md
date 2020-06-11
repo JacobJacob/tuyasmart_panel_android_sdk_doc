@@ -72,41 +72,41 @@
 
   #### 高德地图依赖项 发布GooglePlay时请务必去除此依赖
 
-    ``` groovy
-    implementation 'com.amap.api:search:6.9.2'
-    implementation 'com.amap.api:map2d:5.2.0'
-    implementation 'com.tuya.smart:tuyasmart-react-native-amap:1.0.0'
-    ```
+  ``` groovy
+  implementation 'com.amap.api:search:6.9.2'
+  implementation 'com.amap.api:map2d:5.2.0'
+  implementation 'com.tuya.smart:tuyasmart-react-native-amap:1.0.0'
+  ```
 
   #### GoogleMap 依赖项 发布国内应用市场时请务必去除此依赖
 
-    ``` groovy
-    implementation 'com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0'
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
-    ```
+  ``` groovy
+  implementation 'com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0'
+  implementation 'com.google.android.gms:play-services-maps:16.1.0'
+  ```
 
   #### QQ 音乐登录模块依赖项
 
-    ``` groovy
-    implementation(name: 'qqmusic-innovation-aidl-api-sdk-1.0.0-SNAPSHOT-release', ext: 'aar')
-  	implementation 'com.tuya.smart.rnplugin:tyrctspeakermanager:1.0.15-open'
-    def tvsVer = '2.3.0'
-    implementation "com.tencent.yunxiaowei.dmsdk:core:$tvsVer"
-    implementation "com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer"
-    ```
+  ``` groovy
+  implementation(name: 'qqmusic-innovation-aidl-api-sdk-1.0.0-SNAPSHOT-release', ext: 'aar')
+  implementation 'com.tuya.smart.rnplugin:tyrctspeakermanager:1.0.15-open'
+  def tvsVer = '2.3.0'
+  implementation "com.tencent.yunxiaowei.dmsdk:core:$tvsVer"
+  implementation "com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer"
+  ```
 
   #### 扫地机依赖项
 
-    ``` groovy
-    implementation 'com.tuya.smart:tuyasmart-react-native-fetch-blob:3.12.0r123h1'
-    implementation 'com.tuya.smart.rnplugin:tyrctlasermanager:1.0.12-h1'
-    implementation 'com.tuya.smart.rnplugin:tyrctlasermap:1.1.30'
-    implementation 'com.tuya.smart.rnplugin:tyrctpointmap:1.0.19'
-    implementation 'com.tuya.smart.rnplugin:tyrctvisionmanager:1.0.7'
-    implementation 'com.tuya.smart.rnplugin:tyrctvisionmap:1.0.11'
-    implementation 'com.tuya.smart.rnplugin:tyrcttransfermanager:1.0.5'
-    implementation 'com.tuya.smart:tuyasmart-react-sweeper-common:1.0.0-rc.5'
-    ```
+  ``` groovy
+  implementation 'com.tuya.smart:tuyasmart-react-native-fetch-blob:3.12.0r123h1'
+  implementation 'com.tuya.smart.rnplugin:tyrctlasermanager:1.0.12-h1'
+  implementation 'com.tuya.smart.rnplugin:tyrctlasermap:1.1.30'
+  implementation 'com.tuya.smart.rnplugin:tyrctpointmap:1.0.19'
+  implementation 'com.tuya.smart.rnplugin:tyrctvisionmanager:1.0.7'
+  implementation 'com.tuya.smart.rnplugin:tyrctvisionmap:1.0.11'
+  implementation 'com.tuya.smart.rnplugin:tyrcttransfermanager:1.0.5'
+  implementation 'com.tuya.smart:tuyasmart-react-sweeper-common:1.0.0-rc.5'
+  ```
 
 ## 混淆配置
 
@@ -164,15 +164,14 @@
 
 ## Application 中初始化涂鸦智能 设备控制业务包
 
-    ``` java
-    public class TuyaSmartApp extends Application {
-
-        @Override
-        public void onCreate() {
-            super.onCreate();
-            TuyaWrapper.init(this);
-            // 必须移除 TuyaHomeSdk.init() 方法，再使用 TuyaPanelSDK.init()
-            TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
-        }
-    }
-    ```
+  ``` java
+  public class TuyaSmartApp extends Application {
+      @Override
+      public void onCreate() {
+          super.onCreate();
+          TuyaWrapper.init(this);
+          // 必须移除 TuyaHomeSdk.init() 方法，再使用 TuyaPanelSDK.init()
+          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
+      }
+  }
+  ```

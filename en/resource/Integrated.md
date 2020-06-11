@@ -1,9 +1,9 @@
 # Integrated Device Control Biz Bundle
-1. Create Project
+## Create Project
 
    Build your project in the Android Studio and integrate Tuyasmart HomeSDK
 
-2. Configure the root build.gradle
+## Configure the root build.gradle
 
   ``` groovy
   allprojects {
@@ -14,7 +14,7 @@
   }
   ```
 
-3. Configure the module build.gradle
+## Configure the module build.gradle
 
   ``` groovy
   android {
@@ -67,47 +67,47 @@
   	}
   ```
 
-    **Optional Configuration**
+  ### Optional Configuration
 
-    * Amap (only China configure)
+  #### Amap (only China configure)
 
-    ``` groovy
-    implementation 'com.amap.api:search:6.9.2'
-    implementation 'com.amap.api:map2d:5.2.0'
-    implementation 'com.tuya.smart:tuyasmart-react-native-amap:1.0.0'
-    ```
+  ``` groovy
+  implementation 'com.amap.api:search:6.9.2'
+  implementation 'com.amap.api:map2d:5.2.0'
+  implementation 'com.tuya.smart:tuyasmart-react-native-amap:1.0.0'
+  ```
 
-    * GoogleMap (only GooglePlay confingure)
+  #### GoogleMap (only GooglePlay confingure)
 
-    ``` groovy
-    implementation 'com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0'
-    implementation 'com.google.android.gms:play-services-maps:16.1.0'
-    ```
+  ``` groovy
+  implementation 'com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0'
+  implementation 'com.google.android.gms:play-services-maps:16.1.0'
+  ```
 
-    * QQ Music
+  #### QQ Music
 
-    ``` groovy
-    implementation(name: 'qqmusic-innovation-aidl-api-sdk-1.0.0-SNAPSHOT-release', ext: 'aar')
-  	implementation 'com.tuya.smart.rnplugin:tyrctspeakermanager:1.0.15-open'
-    def tvsVer = '2.3.0'
-    implementation "com.tencent.yunxiaowei.dmsdk:core:$tvsVer"
-    implementation "com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer"
-    ```
+  ``` groovy
+  implementation(name: 'qqmusic-innovation-aidl-api-sdk-1.00-SNAPSHOT-release', ext: 'aar')
+  implementation 'com.tuya.smart.rnplugin:tyrctspeakermanager:1.0.15-open'
+  def tvsVer = '2.3.0'
+  implementation "com.tencent.yunxiaowei.dmsdk:core:$tvsVer"
+  implementation "com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer"
+  ```
 
-    * Sweeper
+  #### Sweeper
 
-    ``` groovy
-    implementation 'com.tuya.smart:tuyasmart-react-native-fetch-blob:3.12.0r123h1'
-    implementation 'com.tuya.smart.rnplugin:tyrctlasermanager:1.0.12-h1'
-    implementation 'com.tuya.smart.rnplugin:tyrctlasermap:1.1.30'
-    implementation 'com.tuya.smart.rnplugin:tyrctpointmap:1.0.19'
-    implementation 'com.tuya.smart.rnplugin:tyrctvisionmanager:1.0.7'
-    implementation 'com.tuya.smart.rnplugin:tyrctvisionmap:1.0.11'
-    implementation 'com.tuya.smart.rnplugin:tyrcttransfermanager:1.0.5'
-    implementation 'com.tuya.smart:tuyasmart-react-sweeper-common:1.0.0-rc.5'
-    ```
+  ``` groovy
+  implementation 'com.tuya.smart:tuyasmart-react-native-fetch-blob:3.120r123h1'
+  implementation 'com.tuya.smart.rnplugin:tyrctlasermanager:1.0.12-h1'
+  implementation 'com.tuya.smart.rnplugin:tyrctlasermap:1.1.30'
+  implementation 'com.tuya.smart.rnplugin:tyrctpointmap:1.0.19'
+  implementation 'com.tuya.smart.rnplugin:tyrctvisionmanager:1.0.7'
+  implementation 'com.tuya.smart.rnplugin:tyrctvisionmap:1.0.11'
+  implementation 'com.tuya.smart.rnplugin:tyrcttransfermanager:1.0.5'
+  implementation 'com.tuya.smart:tuyasmart-react-sweeper-common:1.0.0-rc.5'
+  ```
 
-4. Configure the progurad
+## Configure the progurad
 
   ``` 
   # react-native
@@ -161,17 +161,16 @@
   -dontwarn com.tuya.**.**
   ```
 
-5. Init Tuya Smart Android Device Control Biz Bundle in the Application
+## Init Tuya Smart Android Device Control Biz Bundle in the Application
 
-    ``` java
-    public class TuyaSmartApp extends Application {
-
-        @Override
-        public void onCreate() {
-            super.onCreate();
-            TuyaWrapper.init(this);
-            // you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()
-            TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
-        }
-    }
-    ```
+  ``` java
+  public class TuyaSmartApp extends Application {
+      @Override
+      public void onCreate() {
+          super.onCreate();
+          TuyaWrapper.init(this);
+          // you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()
+          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
+      }
+  }
+  ```

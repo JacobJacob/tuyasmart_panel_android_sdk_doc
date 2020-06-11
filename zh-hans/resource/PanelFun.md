@@ -47,7 +47,9 @@ final ITuyaPanelLoadCallback mLoadCallback = new ITuyaPanelLoadCallback() {
 TuyaPanelSDK.getPanelInstance().gotoPanelViewControllerWithDevice(TuyaPanelSDK.getCurrentActivity(), mCurrentHomeId, bean.getDevId(), mLoadCallback);
 ```
 
-## 点击面板右上角按钮
+## 面板事件回调
+
+### 点击面板右上角按钮
 
 通过面板右上角按钮回调打开其他页面
 
@@ -73,7 +75,7 @@ TuyaPanelSDK.getPanelInstance().setPressedRightMenuListener(new ITuyaPressedRigh
 });
 ```
 
-## 获取面板内路由地址
+### 获取面板内路由地址
 获取面板内部路由地址跳转对应页面
 
 **接口说明**
