@@ -1,3 +1,3 @@
-# 集成准备
+# 准备工作
 
-涂鸦 设备控制业务包 是基于[涂鸦公版 SDK ](https://github.com/TuyaInc/tuyasmart_home_android_sdk)3.13.0 版本开发，可以参考[公版 SDK 文档](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans) 完成注册、新建家庭、配网后才可以接入使用 设备控制业务包
+涂鸦智能 Android 设备控制业务包依赖于涂鸦智能 Home SDK，基于此基础上进行拓展开发，在开始开发前，需要在涂鸦智能开发平台上注册开发者账号、创建产品等，并获取到激活 SDK 的密钥，具体的操作流程请参考涂[鸦全屋智能 SDK 集成准备章节](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/resource/Preparation.html)

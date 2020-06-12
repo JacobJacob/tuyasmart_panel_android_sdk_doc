@@ -1,3 +1,3 @@
-# Preparation
+# Preparation for Integration
 
-Tuya Smart Android Device Control Biz Bundle bases on the [Tuya Smart SDK](https://github.com/TuyaInc/tuyasmart_home_android_sdk) 3.13.0.you can  complete register,create family,configure network by referring to the [Tuya Smart SDK Docs](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/) ,then you can use the Tuya Smart Android Device Control Biz Bundle.
+Tuya Smart Android Device Control Biz Bundle relies on the Tuya Smart Home Android SDK. Before starting to develop with the SDK, you need to register a developer account, create a product, etc. on the Tuya Smart Development Platform, and obtain a key to activate the SDK, please refer to [Tuya Smart Home Android SDK Preparation work](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/resource/Preparation.html).

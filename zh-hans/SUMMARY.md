@@ -1,7 +1,7 @@
 # Summary
 
 * [功能概述](README.md)
-* [集成准备](./resource/Preparation.md)
+* [准备工作](./resource/Preparation.md)
 * [集成业务包](./resource/Integrated.md)
 * [业务包功能](./resource/PanelFun.md)
     * [打开面板](./resource/PanelFun.md#打开面板)
