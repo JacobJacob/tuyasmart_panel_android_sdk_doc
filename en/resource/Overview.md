@@ -10,5 +10,4 @@ Supported Features：Device panel control and alarm
 
 Unsupported Feature：Groups panel control
 
-
 **Documentation has been migrated to [BizBundle Doc](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/)**
