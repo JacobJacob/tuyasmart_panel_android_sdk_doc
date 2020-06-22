@@ -6,6 +6,6 @@
 
 支持硬件设备类型：WIFI
 
-支持功能：设备面板控制、定时，不支持：群组面板
+支持功能：设备面板控制、定时
 
-六月底前支持控制 Zigbee、Mesh、BLE 设备
+**文档已经迁移至[业务包文档](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/)**
