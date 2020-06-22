@@ -1,0 +1,537 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>业务包功能 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PanelFun.html" />
+    
+    
+    <link rel="prev" href="Integrated.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Preparation.html">
+            
+                <a href="Preparation.html">
+            
+                    
+                    准备工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Integrated.html">
+            
+                <a href="Integrated.html">
+            
+                    
+                    集成业务包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="PanelFun.html">
+            
+                <a href="PanelFun.html">
+            
+                    
+                    业务包功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="PanelFun.html">
+            
+                <a href="PanelFun.html#打开面板">
+            
+                    
+                    打开面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="PanelFun.html">
+            
+                <a href="PanelFun.html#面板事件回调">
+            
+                    
+                    面板事件回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="PanelFun.html">
+            
+                <a href="PanelFun.html#释放面板资源">
+            
+                    
+                    释放面板资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="PanelFun.html">
+            
+                <a href="PanelFun.html#清除所有面板缓存">
+            
+                    
+                    清除所有面板缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ErrorCode.html">
+            
+                <a href="ErrorCode.html">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Changelog.html">
+            
+                <a href="Changelog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >业务包功能</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x6253;&#x5F00;&#x9762;&#x677F;"><b>1.1. </b>&#x6253;&#x5F00;&#x9762;&#x677F;</a></li><li><span class="title-icon "></span><a href="#&#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;"><b>1.2. </b>&#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;</a></li><ul><li><span class="title-icon "></span><a href="#&#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;"><b>1.2.1. </b>&#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;"><b>1.2.2. </b>&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;</a></li></ul><li><span class="title-icon "></span><a href="#&#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;"><b>1.3. </b>&#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;</a></li><li><span class="title-icon "></span><a href="#&#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;"><b>1.4. </b>&#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;</a></li></ul></ul></div><h2 id="&#x6253;&#x5F00;&#x9762;&#x677F;"><a name="&#x6253;&#x5F00;&#x9762;&#x677F;" class="anchor-navigation-ex-anchor" href="#&#x6253;&#x5F00;&#x9762;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6253;&#x5F00;&#x9762;&#x677F;</h2>
+<p>&#x901A;&#x8FC7;&#x5BB6;&#x5EAD; Id &#x548C;&#x8BBE;&#x5907; Id &#x8FDB;&#x5165;&#x5BF9;&#x5E94;&#x8BBE;&#x5907;&#x9762;&#x677F;&#x9875;&#x9762;&#xFF0C;&#x5BB6;&#x5EAD;&#x548C;&#x8BBE;&#x5907;&#x7684; Id &#x9700;&#x8981;&#x901A;&#x8FC7;&#x516C;&#x7248; SDK &#x63A5;&#x53E3;&#x83B7;&#x53D6;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x6253;&#x5F00;&#x8BBE;&#x5907;&#x9762;&#x677F;</p>
+<pre class="language-"><code class="lang-java"><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">,</span> <span class="token keyword">long</span> homeId<span class="token punctuation">,</span> <span class="token class-name">String</span> devId<span class="token punctuation">,</span> <span class="token class-name">ITuyaPanelLoadCallback</span> loadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activity</td>
+<td>&#x5728;&#x9762;&#x677F;&#x5185;&#x6253;&#x5F00;&#x65B0;&#x9762;&#x677F;&#x65F6;&#x5E94;&#x4F7F;&#x7528; TuyaPanelSDK.getCurrentActivity()</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>&#x5BB6;&#x5EAD; Id &#x901A;&#x8FC7;&#x516C;&#x7248; SDK &#x63A5;&#x53E3;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td>devId</td>
+<td>&#x8BBE;&#x5907;Id &#x901A;&#x8FC7;&#x516C;&#x7248; SDK &#x63A5;&#x53E3;&#x83B7;&#x53D6;</td>
+</tr>
+<tr>
+<td>loadCallback</td>
+<td>&#x9762;&#x677F;&#x52A0;&#x8F7D;&#x56DE;&#x8C03;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token comment">// &#x52A0;&#x8F7D;&#x72B6;&#x6001;&#x56DE;&#x8C03;&#x91CC;&#x754C;&#x9762;&#x64CD;&#x4F5C;&#x7684; Context &#x5E94;&#x4F7F;&#x7528; TuyaPanelSDK.getCurrentActivity()</span>
+<span class="token keyword">final</span> <span class="token class-name">ITuyaPanelLoadCallback</span> mLoadCallback <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaPanelLoadCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStart</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;Loading...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token function">getApplicationContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;errorCode:&quot;</span> <span class="token operator">+</span> code <span class="token operator">+</span> <span class="token string">&quot;,errorString:&quot;</span> <span class="token operator">+</span> error<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_LONG<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onProgress</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> progress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//&#x6253;&#x5F00;&#x9762;&#x677F;</span>
+<span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mCurrentHomeId<span class="token punctuation">,</span> bean<span class="token punctuation">.</span><span class="token function">getDevId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mLoadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;"><a name="&#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x9762;&#x677F;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;</h2>
+<h3 id="&#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;"><a name="&#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;" class="anchor-navigation-ex-anchor" href="#&#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x70B9;&#x51FB;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;</h3>
+<p>&#x901A;&#x8FC7;&#x9762;&#x677F;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;&#x56DE;&#x8C03;&#x6253;&#x5F00;&#x5176;&#x4ED6;&#x9875;&#x9762;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8FDB;&#x5165;&#x9762;&#x677F;&#x9875;&#x9762;&#x540E;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x6309;&#x94AE;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9762;&#x677F;&#x8BBE;&#x5907; Id</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">setPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token class-name">ITuyaPressedRightMenuListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITuyaPressedRightMenuListener</td>
+<td>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x56DE;&#x8C03;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x9762;&#x677F;&#x8BBE;&#x5907; Id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onPressedRightMenu</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;PanelMore&quot;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;"><a name="&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x8DEF;&#x7531;&#x5730;&#x5740;</h3>
+<p>&#x83B7;&#x53D6;&#x9762;&#x677F;&#x5185;&#x90E8;&#x8DEF;&#x7531;&#x5730;&#x5740;&#x8DF3;&#x8F6C;&#x5BF9;&#x5E94;&#x9875;&#x9762;</p>
+<p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong></p>
+<p>&#x8FDB;&#x5165;&#x9762;&#x677F;&#x9875;&#x9762;&#x540E;&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x6309;&#x94AE;&#x83B7;&#x53D6;&#x8DEF;&#x7531;&#x5730;&#x5740;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">setOpenUrlListener</span><span class="token punctuation">(</span><span class="token class-name">ITuyaOpenUrlListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITuyaOpenUrlListener</td>
+<td>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x56DE;&#x8C03;&#x83B7;&#x53D6;&#x8DEF;&#x7531;&#x5730;&#x5740;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setOpenUrlListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaOpenUrlListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handleOpenURLString</span><span class="token punctuation">(</span><span class="token class-name">String</span> urlString<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> urlString<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;"><a name="&#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x91CA;&#x653E;&#x9762;&#x677F;&#x8D44;&#x6E90;</h2>
+<p>&#x5728;&#x9000;&#x51FA;&#x5E94;&#x7528;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x91CA;&#x653E;&#x8D44;&#x6E90;</p>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanel</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;"><a name="&#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x6E05;&#x9664;&#x6240;&#x6709;&#x9762;&#x677F;&#x7F13;&#x5B58;</h2>
+<p>&#x9762;&#x677F;&#x6587;&#x4EF6;&#x4F1A;&#x5B58;&#x653E;&#x5728;&#x5F53;&#x524D; app &#x5B58;&#x50A8;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x82E5;&#x9700;&#x8981;&#x6E05;&#x7406;&#x53EF;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;</p>
+<p><strong>&#x793A;&#x4F8B;&#x4EE3;&#x7801;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">clearPanelCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Integrated.html" class="navigation navigation-prev " aria-label="Previous page: 集成业务包">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PanelFun.html#打开面板" class="navigation navigation-next " aria-label="Next page: 打开面板">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"业务包功能","level":"1.4","depth":1,"next":{"title":"打开面板","level":"1.4.1","depth":2,"anchor":"#打开面板","path":"resource/PanelFun.md","ref":"./resource/PanelFun.md#打开面板","articles":[]},"previous":{"title":"集成业务包","level":"1.3","depth":1,"path":"resource/Integrated.md","ref":"./resource/Integrated.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","expandable-chapters-small","pageview-count","language-picker","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_panel_android_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/PanelFun.md","mtime":"2020-06-22T06:57:16.356Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-22T06:58:03.923Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
